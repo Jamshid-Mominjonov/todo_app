@@ -1,26 +1,24 @@
-# ✅ ToDo App
+# ToDo App
 
-A modern **ToDo mobile application** built with **Flutter**, following **MVVM Architecture** principles.  
+⚠️ This project is currently being refactored
+
+A modern **ToDo mobile application** built with **Flutter**.  
 The app helps users manage daily tasks efficiently with secure authentication and offline support.
 
 ---
 
 ## ✨ Features
 
-- 🔐 **User login & registration** with Firebase Authentication
 - 📝 **CRUD operations**: create, read, update, and delete tasks
 - 📦 **Offline storage** with Hive DB
-- 🏗️ **MVVM Architecture** for maintainability and scalability
 
 ---
 
 ## 🛠️ Technologies
 
 - **Flutter** (Dart)
-- **Riverpod** (State Management)
-- **Firebase Authentication**
+- **Provider** (State Management)
 - **Hive DB** (local database)
-- **MVVM Architecture**
 
 ---
 

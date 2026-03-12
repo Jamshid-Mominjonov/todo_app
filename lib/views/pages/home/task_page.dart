@@ -34,7 +34,7 @@ class _TasksPageState extends ConsumerState<TaskPage> {
     final tasksProvider = ref.read(taskNotifierProvider.notifier);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xff62D2C3),
+        backgroundColor: Colors.blueGrey,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -158,9 +158,7 @@ class _TasksPageState extends ConsumerState<TaskPage> {
                                                   ),
                                                 ),
                                                 duration: Duration(seconds: 2),
-                                                backgroundColor: Color(
-                                                  0xff62D2C3,
-                                                ),
+                                                backgroundColor: Colors.lightBlueAccent,
                                               ),
                                             );
                                           },

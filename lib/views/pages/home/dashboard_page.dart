@@ -29,7 +29,7 @@ class _DashboardPageState extends ConsumerState<DashboardPage> {
         children: [
           Container(
             height: screenHeight * 0.3,
-            color: Color(0xff62D2C3),
+            color: Colors.lightBlueAccent,
             child: Column(
               children: [
                 Align(
