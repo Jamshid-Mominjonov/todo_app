@@ -1,7 +1,6 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import '../../../core/route/route_names.dart';
-import '../../widgets/auth/custom_button.dart';
+import '../widgets/custom_button.dart';
+import 'dashboard_page.dart';
 
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({super.key});
@@ -11,17 +10,6 @@ class OnboardingPage extends StatefulWidget {
 }
 
 class _OnboardingPageState extends State<OnboardingPage> {
-
-  Future<void> checkUser() async {
-    final user = FirebaseAuth.instance.currentUser;
-    if(!mounted) return;
-
-    if(user != null) {
-      Navigator.pushReplacementNamed(context, RouteNames.dashboardPage);
-    } else {
-      Navigator.pushReplacementNamed(context, RouteNames.signUpPage);
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +40,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   ),
                 ),
                 SizedBox(height: screenHeight * 0.26),
-                CustomButton(text: 'Get Started', onPressed: (){checkUser();}),
+                CustomButton(text: 'Get Started', onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => DashboardPage()));})
               ],
             ),
           ),

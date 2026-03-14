@@ -1,9 +1,7 @@
 # ToDo App
 
-⚠️ This project is currently being refactored
-
 A modern **ToDo mobile application** built with **Flutter**.  
-The app helps users manage daily tasks efficiently with secure authentication and offline support.
+The app helps users manage daily tasks efficiently with offline support.
 
 ---
 
