@@ -53,7 +53,7 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 ## 👨‍💻 Author
 
 **Jamshid Mo'minjonov**  
-📧 [jamshidmominjonov05@gmail.com](mailto:jamshidmominjonov05@gmail.com)
+📧 [jamshidmuminjonov05@gmail.com](mailto:jamshidmominjonov05@gmail.com)
 
 ---
 
