@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ViewTasksButton extends StatelessWidget {
   final String text;
@@ -7,22 +8,21 @@ class ViewTasksButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double screenWidth = MediaQuery.of(context).size.width;
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        minimumSize: Size(screenWidth, 60),
+        minimumSize: Size(double.infinity, 50.h),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(24),
-          side: BorderSide(color: Colors.black),
+          borderRadius: BorderRadius.circular(18.r),
+          side: const BorderSide(color: Colors.grey),
         ),
         backgroundColor: Colors.white,
       ),
       onPressed: onPressed,
       child: Text(
-        textAlign: TextAlign.center,
         text,
+        textAlign: TextAlign.center,
         style: TextStyle(
-          fontSize: 20,
+          fontSize: 20.sp,
           color: Colors.black,
           fontWeight: FontWeight.bold,
         ),

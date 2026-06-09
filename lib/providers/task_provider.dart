@@ -30,4 +30,18 @@ class TaskProvider with ChangeNotifier {
         await dataSource.deleteTask(index);
         await loadTasks();
       }
+
+      Future<void> toggleTask(int index) async {
+        final task = _tasks[index];
+        task.isDone = !task.isDone;
+        await dataSource.updateTask(index, task);
+        await loadTasks();
+      }
+
+      Future<void> taskPriority(int index, Priority newPriority) async {
+        final task = _tasks[index];
+        task.priority = newPriority;
+        await dataSource.updateTask(index, task);
+        await loadTasks();
+      }
 }

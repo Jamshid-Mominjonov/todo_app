@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TaskButton extends StatelessWidget {
   final String text;
@@ -7,21 +8,21 @@ class TaskButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double screenWidth = MediaQuery.of(context).size.width;
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        minimumSize: Size(screenWidth, 60),
+        minimumSize: Size(double.infinity, 50.h),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(24),
+          borderRadius: BorderRadius.circular(18.r),
         ),
-        backgroundColor: Color(0xff62D2C3),
+        //backgroundColor: const Color(0xff62D2C3),
+        backgroundColor: Color(0xFF0096C8),
       ),
       onPressed: onPressed,
       child: Text(
-        textAlign: TextAlign.center,
         text,
+        textAlign: TextAlign.center,
         style: TextStyle(
-          fontSize: 20,
+          fontSize: 20.sp,
           color: Colors.white,
         ),
       ),

@@ -10,5 +10,28 @@ class Task extends HiveObject {
   @HiveField(1)
   String description;
 
-  Task({required this.title, required this.description});
+  @HiveField(2)
+  bool isDone;
+
+  @HiveField(3)
+  Priority priority;
+
+  Task({
+    required this.title,
+    required this.description,
+    required this.isDone,
+    this.priority = Priority.low,
+  });
+}
+
+@HiveType(typeId: 1)
+enum Priority {
+  @HiveField(0)
+  low,
+
+  @HiveField(1)
+  medium,
+
+  @HiveField(2)
+  high,
 }
